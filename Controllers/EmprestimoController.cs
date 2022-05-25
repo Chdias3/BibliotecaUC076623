@@ -11,6 +11,11 @@ namespace Biblioteca.Controllers
     {
         public IActionResult Cadastro()
         {
+            //validando se o usuario esta logado. Caso não esteja é redirecionado para Login
+      if (HttpContext.Session.GetInt32("senha") == null)
+      {
+        return RedirectToAction("Login", "Home");
+      }
             LivroService livroService = new LivroService();
             EmprestimoService emprestimoService = new EmprestimoService();
 
@@ -37,6 +42,11 @@ namespace Biblioteca.Controllers
 
         public IActionResult Listagem(string tipoFiltro, string filtro)
         {
+                  //validando se o usuario esta logado. Caso não esteja é redirecionado para Login
+      if (HttpContext.Session.GetInt32("senha") == null)
+      {
+        return RedirectToAction("Login", "Home");
+      }
             FiltrosEmprestimos objFiltro = null;
             if(!string.IsNullOrEmpty(filtro))
             {
