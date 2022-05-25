@@ -11,11 +11,7 @@ namespace Biblioteca.Controllers
     {
         public IActionResult Cadastro()
         {
-            //validando se o usuario esta logado. Caso não esteja é redirecionado para Login
-      if (HttpContext.Session.GetInt32("senha") == null)
-      {
-        return RedirectToAction("Login", "Home");
-      }
+             Autenticacao.CheckLogin(this);
             LivroService livroService = new LivroService();
             EmprestimoService emprestimoService = new EmprestimoService();
 
@@ -27,6 +23,8 @@ namespace Biblioteca.Controllers
         [HttpPost]
         public IActionResult Cadastro(CadEmprestimoViewModel viewModel)
         {
+
+           
             EmprestimoService emprestimoService = new EmprestimoService();
             
             if(viewModel.Emprestimo.Id == 0)
@@ -42,11 +40,7 @@ namespace Biblioteca.Controllers
 
         public IActionResult Listagem(string tipoFiltro, string filtro)
         {
-                  //validando se o usuario esta logado. Caso não esteja é redirecionado para Login
-      if (HttpContext.Session.GetInt32("senha") == null)
-      {
-        return RedirectToAction("Login", "Home");
-      }
+           Autenticacao.CheckLogin(this);
             FiltrosEmprestimos objFiltro = null;
             if(!string.IsNullOrEmpty(filtro))
             {
