@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Cursos\\SenacEAD\\UC07\\MO-instalaçoes\\Biblioteca\\Biblioteca.csproj": {}
+    "E:\\Cursos\\SenacEAD\\UC07\\atividade1\\Biblioteca\\Biblioteca.csproj": {}
   },
   "projects": {
-    "E:\\Cursos\\SenacEAD\\UC07\\MO-instalaçoes\\Biblioteca\\Biblioteca.csproj": {
+    "E:\\Cursos\\SenacEAD\\UC07\\atividade1\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Cursos\\SenacEAD\\UC07\\MO-instalaçoes\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "E:\\Cursos\\SenacEAD\\UC07\\atividade1\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "E:\\Cursos\\SenacEAD\\UC07\\MO-instalaçoes\\Biblioteca\\Biblioteca.csproj",
+        "projectPath": "E:\\Cursos\\SenacEAD\\UC07\\atividade1\\Biblioteca\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\csvdi.DESKTOP-JC86JS6\\.nuget\\packages\\",
-        "outputPath": "E:\\Cursos\\SenacEAD\\UC07\\MO-instalaçoes\\Biblioteca\\obj\\",
+        "outputPath": "E:\\Cursos\\SenacEAD\\UC07\\atividade1\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\csvdi.DESKTOP-JC86JS6\\AppData\\Roaming\\NuGet\\NuGet.Config"
