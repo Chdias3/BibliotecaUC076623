@@ -40,8 +40,7 @@
                 <tbody>
                     @foreach (var e in Model)
                     {
-
-                        @if ((System.DateTime.Compare(System.DateTime.Now, e.DataDevolucao) > 0))
+                        if ((System.DateTime.Compare(System.DateTime.Now, e.DataDevolucao) > 0))
                         {
                             Classe = "text-danger";
                         }
@@ -49,9 +48,7 @@
                         {
                             Classe = "";
                         }
-
-
-                        <tr class=@Classe>
+                        <tr class="@Classe">
                             <td>@e.Id</td>
                             <td>@e.NomeUsuario</td>
                             <td>@e.DataEmprestimo.ToString("dd/MM/yyyy")</td>
@@ -60,7 +57,6 @@
                             <td>@e.Livro.Autor</td>
                             <td><a href="/Emprestimo/Edicao/@e.Id">Editar</a></td>
                         </tr>
-
                     }
                 </tbody>
             </table>
